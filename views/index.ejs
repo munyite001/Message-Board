@@ -5,7 +5,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1><%= title %> Message Board</h1>
+    <div class="container">
+      <% for (let i = 0; i < messages.length; i++) { %>
+        <div class="message">
+          <div class="message-heading">
+            <p><%= messages[i].user %></p>
+            <p><%= messages[i].added %></p>
+          </div>
+          <p><%= messages[i].text %></p>
+        </div>
+      <% } %>
+    </div>
+
+    <a href="/new">Add new Message</a>
   </body>
 </html>
