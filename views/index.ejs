@@ -10,10 +10,10 @@
       <% for (let i = 0; i < messages.length; i++) { %>
         <div class="message">
           <div class="message-heading">
-            <p><%= messages[i].user %></p>
-            <p><%= messages[i].added %></p>
+            <p><%= messages[i].username %></p>
+            <p><%= messages[i].message_date %></p>
           </div>
-          <p><%= messages[i].text %></p>
+          <p><%= messages[i].message_text %></p>
         </div>
       <% } %>
     </div>
