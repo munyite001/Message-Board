@@ -13,9 +13,9 @@ const port = process.env.PORT;
 
 const SQL = `
     INSERT INTO messages (text, date, user_id)
-    VALUES ($1, NOW(), $2),
-           ($3, NOW(), $4),
-           ($5, NOW(), $6);
+    VALUES ('Hello World', NOW(), 1),
+           ('Whatz up party people!!!', NOW(), 2),
+           ('Hello Message Board World', NOW(), 3);
 `;
 
 const values = [
